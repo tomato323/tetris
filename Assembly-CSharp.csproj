@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{D2BFFF02-D087-DB1A-C7FE-6538A965A290}</ProjectGuid>
+    <ProjectGuid>{4B1219B7-556C-71C6-14F5-4BD473BDE852}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -57,9 +57,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\SpawnerScript.cs" />
+    <Compile Include="Assets\Script\GameManagerScript.cs" />
     <Compile Include="Assets\Script\BoardScript.cs" />
     <Compile Include="Assets\Script\BlockScript.cs" />
-    <Compile Include="Assets\Script\GameManagerScript.cs" />
+    <Compile Include="Assets\Script\RoundingScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

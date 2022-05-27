@@ -13,6 +13,10 @@ public class GameManagerScript : MonoBehaviour
     SpawnerScript spawner;
     BlockScript activeBlock;
 
+    BoardScript board;
+
+
+
 
     //スポナーオブジェクトをスポナー変数に格納するコードの記述
 
@@ -24,6 +28,10 @@ public class GameManagerScript : MonoBehaviour
     private void Start()
     {
         spawner = GameObject.FindObjectOfType<SpawnerScript>();
+
+        board = GameObject.FindObjectOfType<BoardScript>();
+
+        spawner.transform.position = RoundingScript.Round(spawner.transform.position);
 
 
         if (!activeBlock)
@@ -45,6 +53,16 @@ public class GameManagerScript : MonoBehaviour
             {
 
                 activeBlock.MoveDown();
+
+
+                if (!board.CheckPosition(activeBlock))
+                {
+                    activeBlock.MoveUp();
+
+                    board.SaveBlockInGrid(activeBlock);
+
+                    activeBlock = spawner.SpawnBlock(); 
+                }
             }
         }
 
