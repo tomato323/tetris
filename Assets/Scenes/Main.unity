@@ -535,6 +535,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e33c8b69ae851649a57dc84962be8d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lastScoreText: {fileID: 801172352}
+  ScoreText: {fileID: 845077191}
+  highScoreText: {fileID: 1569238873}
   emptySprite: {fileID: 2418685933652585040, guid: dda992f6d897ccf4394d22c43b7f2bd3, type: 3}
   height: 30
   width: 10
@@ -623,7 +626,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 8888
+  m_Text: 0
 --- !u!222 &801172353
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -702,7 +705,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 8888
+  m_Text: 0
 --- !u!222 &845077192
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1041,7 +1044,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 8888
+  m_Text: 0
 --- !u!222 &1569238874
 CanvasRenderer:
   m_ObjectHideFlags: 0

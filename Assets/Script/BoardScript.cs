@@ -1,10 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BoardScript : MonoBehaviour
+
+   
 {
     // Start is called before the first frame update
+
+    public Text lastScoreText;
+    int lastScore;
+
+    public Text ScoreText;
+    int Score;
+
+    public Text highScoreText;
+    int highScore;
+
 
     private Transform[,] grid;
 
@@ -13,6 +26,8 @@ public class BoardScript : MonoBehaviour
 
     [SerializeField]
     private int height = 30, width = 10, header = 8;
+
+    
 
     private void Awake()
     {
@@ -24,6 +39,11 @@ public class BoardScript : MonoBehaviour
     private void Start()
     {
         CreateBoard();
+
+        Score = 0;
+        Score += 0;
+        
+        ScoreText.text = Score.ToString();
     }
 
 
@@ -102,7 +122,34 @@ public class BoardScript : MonoBehaviour
                 ShiftRowsDown(y + 1);
 
                 y--;
+                Score += 10;
+                Debug.Log(Score);
+
+                ScoreText.text = Score.ToString();
+
+                lastScore = Score;
+                lastScoreText.text = lastScore.ToString();
+
+                if (PlayerPrefs.HasKey("highScore") == true)
+                {
+                    highScore = PlayerPrefs.GetInt("highScore");
+
+                    if (highScore < lastScore)
+                    {
+                        highScore = lastScore;
+                        PlayerPrefs.SetInt("highScore", highScore);
+                    }
+                }
+                else
+                {
+                    highScore = lastScore;
+                    PlayerPrefs.SetInt("highScore", highScore);
+                }
+
+                highScoreText.text = highScore.ToString();
+
             }
+
         }
     }
 
@@ -125,7 +172,7 @@ public class BoardScript : MonoBehaviour
             if (grid[x, y] != null)
             {
                 Destroy(grid[x, y].gameObject);
-                Debug.Log("block");
+                
             }
             grid[x,y] = null;
         }

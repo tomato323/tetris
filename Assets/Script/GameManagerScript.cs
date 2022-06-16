@@ -180,32 +180,7 @@ public class GameManagerScript : MonoBehaviour
         SceneManager.LoadScene("StartScene");
     }
 
-    private int AddScore(int rowNum)
-    {
-        int addScore;
-
-        if(rowNum == 1)
-        {
-            addScore = 10;
-        }
-        else if(rowNum == 2)
-        {
-            addScore = 20;
-        }
-        else if(rowNum==3)
-        {
-            addScore = 50;
-        }
-        else if(rowNum ==4)
-        {
-            addScore = 100;
-        }
-        else
-        {
-            addScore = 0;
-        }
-        return addScore;
-    }
+   
 
 
 
