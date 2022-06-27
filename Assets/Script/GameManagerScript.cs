@@ -125,8 +125,9 @@ public class GameManagerScript : MonoBehaviour
         {
             activeBlock.MoveDown();
 
+           
             nextKeyLeftRightTimer = Time.time + nextKeyDownInterval;
-            nextdropTimer = Time.time + dropInterval;
+            nextdropTimer =  Time.time + dropInterval;
 
             if (!board.CheckPosition(activeBlock))
             {

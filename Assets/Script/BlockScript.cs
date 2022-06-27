@@ -31,7 +31,7 @@ public class BlockScript : MonoBehaviour
     }
     public void MoveUp()
     {
-        Move(new Vector3(0, 1, 0));
+       Move(new Vector3(0, 1, 0));
     }
     public void MoveDown()
     {
