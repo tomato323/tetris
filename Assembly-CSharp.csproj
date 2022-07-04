@@ -62,6 +62,8 @@
     <Compile Include="Assets\Script\GameManagerScript.cs" />
     <Compile Include="Assets\Script\BoardScript.cs" />
     <Compile Include="Assets\Script\BlockScript.cs" />
+    <Compile Include="Assets\Script\RuleScript.cs" />
+    <Compile Include="Assets\Script\StageSceneScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

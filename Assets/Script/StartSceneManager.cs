@@ -21,6 +21,13 @@ public class StartSceneManager : MonoBehaviour
     {
        
 
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadScene("StageScene");
+    }
+
+    public void RuleButton()
+    {
+
+
+        SceneManager.LoadScene("RuleScene");
     }
 }

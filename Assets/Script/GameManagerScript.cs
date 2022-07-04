@@ -36,6 +36,8 @@ public class GameManagerScript : MonoBehaviour
 
     bool gameOver;
 
+    bool push = false;
+
     [SerializeField]
     private float dropInterval = 0.25f;
     float nextdropTimer;
@@ -79,6 +81,8 @@ public class GameManagerScript : MonoBehaviour
         }
 
         PlayerInput();
+
+       
     }
 
 
@@ -142,6 +146,10 @@ public class GameManagerScript : MonoBehaviour
                 }
             }
         }
+        if (push)
+        {
+            DownButton();
+        }
     }
 
     void BottomBoard()
@@ -182,7 +190,78 @@ public class GameManagerScript : MonoBehaviour
     }
 
    
+    public void RightButton ()
+    {
+       
+            activeBlock.MoveRight();
 
+            nextKeyLeftRightTimer = Time.time + nextKeyLeftRightInterval;
+
+            if (!board.CheckPosition(activeBlock))
+            {
+                activeBlock.MoveLeft();
+            }
+    }
+    public void LeftButton()
+    {
+       
+            activeBlock.MoveLeft();
+
+            nextKeyLeftRightTimer = Time.time + nextKeyLeftRightInterval;
+
+            if (!board.CheckPosition(activeBlock))
+            {
+                activeBlock.MoveRight();
+            }
+        
+    }
+    public void DownButton()
+    {
+       
+            activeBlock.MoveDown();
+
+
+            nextKeyLeftRightTimer = Time.time + nextKeyDownInterval;
+            nextdropTimer = Time.time + dropInterval;
+
+            if (!board.CheckPosition(activeBlock))
+            {
+                if (board.OverLimit(activeBlock))
+                {
+                    GameOver();
+                }
+                else
+                {
+
+                    BottomBoard();
+                }
+            }
+        
+        
+    }
+    public void RightRotationButton()
+    {
+        if(Time.time > nextKeyRotateTimer)
+        {
+            activeBlock.RotateRight();
+            nextKeyRotateTimer = Time.time + nextKeyRotateInterval;
+
+            if (!board.CheckPosition(activeBlock))
+            {
+                activeBlock.RotateLeft();
+            }
+
+        }
+    }
+   
+    public void PushDown()
+    {
+        push = true;
+    }
+    public void PushUp()
+    {
+        push = false;
+    }
 
 
 }
