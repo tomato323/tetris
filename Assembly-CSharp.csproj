@@ -58,12 +58,13 @@
   <ItemGroup>
     <Compile Include="Assets\Script\SpawnerScript.cs" />
     <Compile Include="Assets\Script\StartSceneManager.cs" />
+    <Compile Include="Assets\Script\RuleScript.cs" />
     <Compile Include="Assets\Script\RoundingScript.cs" />
+    <Compile Include="Assets\Script\StageSceneScript.cs" />
     <Compile Include="Assets\Script\GameManagerScript.cs" />
     <Compile Include="Assets\Script\BoardScript.cs" />
     <Compile Include="Assets\Script\BlockScript.cs" />
-    <Compile Include="Assets\Script\RuleScript.cs" />
-    <Compile Include="Assets\Script\StageSceneScript.cs" />
+    <Compile Include="Assets\Script\BomScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
