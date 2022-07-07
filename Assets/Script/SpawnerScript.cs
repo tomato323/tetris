@@ -11,12 +11,26 @@ public class SpawnerScript : MonoBehaviour
     [SerializeField]
     BlockScript[] Blocks;
 
+    int bomSpawner = 0;
+    int i;
+    public GameObject Shikaku;
 
     //関数の作成//
     //ランダムなブロックを1つ選ぶ関数
     BlockScript GetRandomBlock()
     {
-        int i = Random.Range(0, Blocks.Length);
+
+        bomSpawner++;
+        i = Random.Range(0, Blocks.Length-2);
+
+        if(bomSpawner == 3)
+        {
+            i = 7;
+            bomSpawner = 0;
+
+            //Instantiate(Shikaku,transform.position, Quaternion.identity);
+           
+        }
 
         if (Blocks[i])
         {
@@ -31,7 +45,12 @@ public class SpawnerScript : MonoBehaviour
     internal BlockScript SpawnBlock()
     {
         BlockScript block = Instantiate(GetRandomBlock(), transform.position, Quaternion.identity);
-
+        if (bomSpawner == 3)
+        {
+           
+           i=8;
+           block = Instantiate(GetRandomBlock(), transform.position, Quaternion.identity);
+        }
         if (block)
         {
             return block;

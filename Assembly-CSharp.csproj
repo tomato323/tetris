@@ -61,10 +61,11 @@
     <Compile Include="Assets\Script\RuleScript.cs" />
     <Compile Include="Assets\Script\RoundingScript.cs" />
     <Compile Include="Assets\Script\StageSceneScript.cs" />
+    <Compile Include="Assets\Script\BomScript.cs" />
     <Compile Include="Assets\Script\GameManagerScript.cs" />
     <Compile Include="Assets\Script\BoardScript.cs" />
     <Compile Include="Assets\Script\BlockScript.cs" />
-    <Compile Include="Assets\Script\BomScript.cs" />
+    <Compile Include="Assets\Script\CollisionScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
