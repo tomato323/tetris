@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 2657255368648362515}
   - component: {fileID: 3738308569292798282}
   - component: {fileID: 7395303078392758539}
-  - component: {fileID: 5222620325984352271}
   m_Layer: 0
   m_Name: Block (1)
   m_TagString: Untagged
@@ -110,27 +109,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!50 &5222620325984352271
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 87902099191081621}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 5
 --- !u!1 &2901625350384512492
 GameObject:
   m_ObjectHideFlags: 0
@@ -190,7 +168,6 @@ GameObject:
   - component: {fileID: 3180567493887353027}
   - component: {fileID: 3957628760215279323}
   - component: {fileID: 6945209974803556125}
-  - component: {fileID: 2276432731114673392}
   m_Layer: 0
   m_Name: Block
   m_TagString: Untagged
@@ -289,27 +266,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!50 &2276432731114673392
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4016569310468272736}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 5
 --- !u!1 &6846688520573584377
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,7 +277,6 @@ GameObject:
   - component: {fileID: 4273082159010136680}
   - component: {fileID: 3437820939726393309}
   - component: {fileID: 8290047468021359554}
-  - component: {fileID: 1070897239598832833}
   m_Layer: 0
   m_Name: Block (2)
   m_TagString: Untagged
@@ -420,27 +375,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!50 &1070897239598832833
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6846688520573584377}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 5
 --- !u!1 &6852447184478095382
 GameObject:
   m_ObjectHideFlags: 0
@@ -452,7 +386,6 @@ GameObject:
   - component: {fileID: 3924981331216912827}
   - component: {fileID: 1295758256707792866}
   - component: {fileID: 6446395429443500714}
-  - component: {fileID: 3837559137834334620}
   m_Layer: 0
   m_Name: Block (3)
   m_TagString: Untagged
@@ -551,24 +484,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!50 &3837559137834334620
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6852447184478095382}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 5

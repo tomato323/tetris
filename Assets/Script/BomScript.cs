@@ -1,19 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class BomScript : MonoBehaviour
 
 
 {
+    public int Score;
 
-    public GameObject Shikaku;
    
+
+
     private void OnDestroy()
     {
         Debug.Log("aaa");
 
-        Instantiate(Shikaku, this.transform.position, this.transform.rotation);
+        BoardScript boardscript; //呼ぶスクリプトにあだなつける
+        GameObject obj = GameObject.Find("Board"); //Playerっていうオブジェクトを探す
+        boardscript = obj.GetComponent<BoardScript>();　//付いているスクリプトを取得
+        boardscript.Score +=10 ;
+
+       
     }
     // Start is called before the first frame update
     void Start()

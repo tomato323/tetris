@@ -59,7 +59,6 @@ GameObject:
   - component: {fileID: 556993007993222292}
   - component: {fileID: 2122639202762932876}
   - component: {fileID: 2548422678987588076}
-  - component: {fileID: 1615363967422585059}
   m_Layer: 0
   m_Name: Block
   m_TagString: Untagged
@@ -158,27 +157,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!50 &1615363967422585059
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2027970004958504503}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 5
 --- !u!1 &3071799119108062914
 GameObject:
   m_ObjectHideFlags: 0
@@ -190,7 +168,6 @@ GameObject:
   - component: {fileID: 1114927698096528964}
   - component: {fileID: 1763247962839739677}
   - component: {fileID: 7329494239464475466}
-  - component: {fileID: 43587783753159485}
   m_Layer: 0
   m_Name: Block (1)
   m_TagString: Untagged
@@ -289,27 +266,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!50 &43587783753159485
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3071799119108062914}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 5
 --- !u!1 &8395196861386972225
 GameObject:
   m_ObjectHideFlags: 0
@@ -320,8 +276,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2153044711185171948}
   - component: {fileID: 4206931859559971765}
-  - component: {fileID: 5478951399722766370}
-  - component: {fileID: 4187534917038354097}
+  - component: {fileID: 2059193564386459801}
   m_Layer: 0
   m_Name: Block (3)
   m_TagString: Untagged
@@ -394,7 +349,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &5478951399722766370
+--- !u!61 &2059193564386459801
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -420,27 +375,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!50 &4187534917038354097
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8395196861386972225}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 5
 --- !u!1 &8402909413811689390
 GameObject:
   m_ObjectHideFlags: 0
@@ -452,7 +386,6 @@ GameObject:
   - component: {fileID: 1212729358823413311}
   - component: {fileID: 300866609890335626}
   - component: {fileID: 5234916839533292817}
-  - component: {fileID: 2385081419892103141}
   m_Layer: 0
   m_Name: Block (2)
   m_TagString: Untagged
@@ -551,24 +484,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!50 &2385081419892103141
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8402909413811689390}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 5

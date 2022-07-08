@@ -13,11 +13,12 @@ public class BoardScript : MonoBehaviour
     int lastScore;
 
     public Text ScoreText;
-    int Score;
+    
 
     public Text highScoreText;
     int highScore;
 
+    public int Score;
 
     private Transform[,] grid;
 

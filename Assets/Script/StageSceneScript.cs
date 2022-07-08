@@ -22,6 +22,21 @@ public class StageSceneScript : MonoBehaviour
     {
 
 
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadScene("Stage1");
     }
+    public void StartButton1()
+    {
+
+
+        SceneManager.LoadScene("Stage2");
+    }
+    public void StartButton2()
+    {
+
+
+        SceneManager.LoadScene("Stage3");
+    }
+
+
 }
+

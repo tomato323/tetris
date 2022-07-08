@@ -23,7 +23,7 @@ public class SpawnerScript : MonoBehaviour
         bomSpawner++;
         i = Random.Range(0, Blocks.Length-1);
 
-        if(bomSpawner == 3)
+        if(bomSpawner == 10)
         {
             i = 7;
             bomSpawner = 0;
