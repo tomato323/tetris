@@ -13,7 +13,7 @@ public class SpawnerScript : MonoBehaviour
 
     int bomSpawner = 0;
     int i;
-    public GameObject Shikaku;
+    
 
     //関数の作成//
     //ランダムなブロックを1つ選ぶ関数
@@ -21,7 +21,7 @@ public class SpawnerScript : MonoBehaviour
     {
 
         bomSpawner++;
-        i = Random.Range(0, Blocks.Length-2);
+        i = Random.Range(0, Blocks.Length-1);
 
         if(bomSpawner == 3)
         {
@@ -45,12 +45,7 @@ public class SpawnerScript : MonoBehaviour
     internal BlockScript SpawnBlock()
     {
         BlockScript block = Instantiate(GetRandomBlock(), transform.position, Quaternion.identity);
-        if (bomSpawner == 3)
-        {
-           
-           i=8;
-           block = Instantiate(GetRandomBlock(), transform.position, Quaternion.identity);
-        }
+       
         if (block)
         {
             return block;
