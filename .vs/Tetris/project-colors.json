@@ -10,7 +10,12 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "その他のファイル",
       "ColorIndex": -1
+    },
+    "4b1219b7-556c-71c6-14f5-4bd473bde852": {
+      "ProjectGuid": "4b1219b7-556c-71c6-14f5-4bd473bde852",
+      "DisplayName": "Assembly-CSharp",
+      "ColorIndex": 1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 2
 }
