@@ -22,6 +22,8 @@ public class BoardScript : MonoBehaviour
 
     private Transform[,] grid;
 
+    public static BoardScript instance;
+
     [SerializeField] 
     private Transform emptySprite;
 
@@ -33,6 +35,11 @@ public class BoardScript : MonoBehaviour
     private void Awake()
     {
         grid = new Transform[width, height];
+
+        if (instance == null)
+        {
+            instance = this;
+        }
     }
 
     Vector2 pos;
@@ -208,7 +215,13 @@ public class BoardScript : MonoBehaviour
         return false;
     }
 
-   
+   public void tostoring()
+    {
+        Debug.Log("ab");
+        Score +=10;
+        ScoreText.text = Score.ToString();
+
+    }
 
 
 }

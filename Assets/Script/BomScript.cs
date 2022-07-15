@@ -11,7 +11,7 @@ public class BomScript : MonoBehaviour
    
 
     public GameObject Ban;
-    public Text ScoreText;
+  
 
 
 
@@ -19,11 +19,12 @@ public class BomScript : MonoBehaviour
     {
         Debug.Log("aaa");
 
-        BoardScript boardscript; //呼ぶスクリプトにあだなつける
-        GameObject obj = GameObject.Find("Board"); //Playerっていうオブジェクトを探す
-        boardscript = obj.GetComponent<BoardScript>();　//付いているスクリプトを取得
-        boardscript.Score +=10 ;
-        ScoreText.text = boardscript.Score.ToString();
+        //BoardScript boardscript; //呼ぶスクリプトにあだなつける
+        //GameObject obj = GameObject.Find("Board"); //Playerっていうオブジェクトを探す
+        //boardscript = obj.GetComponent<BoardScript>();　//付いているスクリプトを取得
+        //boardscript.Score +=10 ;
+
+        BoardScript.instance.tostoring();
 
 
         Instantiate(Ban, this.transform.position, Quaternion.identity);

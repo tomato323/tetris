@@ -38,6 +38,8 @@ public class GameManagerScript : MonoBehaviour
 
     bool push = false;
 
+    public AudioSource BGM;
+
     [SerializeField]
     private float dropInterval = 0.25f;
     float nextdropTimer;
@@ -179,6 +181,8 @@ public class GameManagerScript : MonoBehaviour
         if (!gameOverPanel.activeInHierarchy)
         {
             gameOverPanel.SetActive(true);
+
+            Destroy(BGM);
         }
 
         gameOver = true;
